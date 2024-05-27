@@ -16,9 +16,9 @@ public  class Estudante extends Isecmarini implements GestorEvento {
         this.vidaEstudante = vidaEstudante;
     }
 
-    public Estudante(String userName, String email, double password, int codigo) {
+    public Estudante(String userName, String email, double password, String curso) {
         super(userName, email, password);
-        this.codigo = codigo;
+        this.curso = curso;
     }
 
     public int getCodigo() {

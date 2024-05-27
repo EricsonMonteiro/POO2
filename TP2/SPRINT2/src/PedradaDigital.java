@@ -4,6 +4,9 @@ package SPRINT2.src;
 
 import SPRINT2.src.novoPerfil;
 import SPRINT_3.novoperfilProfessor;
+import SPRINT_3.novoperfilEstudante;
+import SPRINT_3.novoperfilFuncionario;
+
 
 import javax.swing.*;
 import java.awt.*;
@@ -90,10 +93,18 @@ public class PedradaDigital {
                     else if (text.getText().equals("criar perfil professor"))  {
                         novoperfilProfessor.main(new String[0]);
 
-//                    } else if (text.getText().equals("criar perfil estudante")) {
+                    } else if (text.getText().equals("criar perfil estudante")) {
+                        novoperfilEstudante.main(new String [0]);
+                    }
+
+                    else if (text.getText().equals("criar perfil funcionario")) {
+                        novoperfilFuncionario.main(new String [0]);
+                    }
 
 
-                    } else {
+
+
+                     else {
                         JOptionPane.showMessageDialog(janela,"Comando não existe: ",text.getText(), JOptionPane.ERROR_MESSAGE);
                     }
                 }
