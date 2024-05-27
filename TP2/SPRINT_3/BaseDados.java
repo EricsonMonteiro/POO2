@@ -9,7 +9,7 @@ import java.sql.SQLException;
 public class BaseDados {
     private static final String user = "ericson";
     private static final String password = "monteiro";
-    private static String url = "jdbc:mysql://172.16.0.32:3306/?user=ericson";
+    private static String url = "jdbc:mysql://172.16.0.32:3306/Pedrada";
 
     public static Connection getConnection() {
         Connection aux = null;
